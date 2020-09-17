@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema targetNamespace="http://utleverer.webservices.reseptformidleren.ergo.no/types/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="dokument" type="xs:anyType" />
+</xs:schema>

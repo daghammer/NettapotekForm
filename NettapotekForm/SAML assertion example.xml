@@ -1,0 +1,68 @@
+<saml:Assertion xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" ID="s25c697da635a0f389026ae58fda0bcc2eeb770ce9" IssueInstant="2016-01-25T08:41:38Z" Version="2.0">
+	<saml:Issuer>idporten.difi.no-v3</saml:Issuer>
+	<ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+		<ds:SignedInfo>
+			<ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+			<ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+			<ds:Reference URI="#s25c697da635a0f389026ae58fda0bcc2eeb770ce9">
+				<ds:Transforms>
+					<ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+					<ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+				</ds:Transforms>
+				<ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+				<ds:DigestValue>Fij2EA4EVhl12emojeQ7pErReEw=</ds:DigestValue>
+			</ds:Reference>
+		</ds:SignedInfo>
+		<ds:SignatureValue>rf8tWPdOe5LonO9EdxIXg7iglCoHHRrFAb61VlU/8iuy5j0Q4AYlBgQOTAuHbv6aeup9+UV50d4kGIZgh8G9XX2v8E9Q7isOcIifBOGiYqrXAw86M8LhQtXp4sLv0RygvJKO8T3xIUHwPKFSBNAyuktkBrwLnS4h4ENnKE59bpHYiucSAwtkUYwE5N8wN2z4ynZzHs8t3KEULrQa/3HZhwMbBafZn4</ds:SignatureValue>
+		<ds:KeyInfo>
+			<ds:X509Data>
+				<ds:X509Certificate>MIIFCTCCA/GgAwIBAgILCCtPHJR3OA6DBLQwDQYJKoZIhvcNAQELBQAwSzELMAkGA1UEBhMCTk8x7X0RlHChQ9HySh9TAqu4AW7wH1ZXhjbEkKDLuEoIMYRNISBtxMbsx7X0RlHChQ9HySh9TACtPHJR3OA6DBLQwDQYJKoZIhvcNAQEsOcIifBOGiYqrXAw86M8LhQtXp4sLv0dOe5LonO9EdxIXg7iglC8x7X0RlHChQ9CTk8x7X0RlHChQ9HySh9TAqu4AW7wH1ZXhjbEk</ds:X509Certificate>
+			</ds:X509Data>
+		</ds:KeyInfo>
+	</ds:Signature>
+	<saml:Subject>
+		<saml:NameID Format="urn:oasis:names:tc:SAML:2.0:nameid-format:persistent" NameQualifier="idporten.difi.no-v3" SPNameQualifier="nettapotek1">Mf/ZfHDrpzphfhtebHDbTC60R7vO</saml:NameID>
+		<saml:SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:bearer">
+			<saml:SubjectConfirmationData InResponseTo="_4570522e7dac091f1822e62c70a5eec5" NotOnOrAfter="2016-01-25T08:51:38Z" Recipient="http://nettapotek1.no/testsp/assertionconsumer"/>
+		</saml:SubjectConfirmation>
+	</saml:Subject>
+	<saml:Conditions NotBefore="2016-01-25T08:31:38Z" NotOnOrAfter="2016-01-25T08:51:38Z">
+		<saml:AudienceRestriction>
+			<saml:Audience>nettapotek1</saml:Audience>
+		</saml:AudienceRestriction>
+	</saml:Conditions>
+	<saml:AuthnStatement AuthnInstant="2016-01-25T08:41:38Z" SessionIndex="s20ffeef28cd3a3f3039b1c2ea436889a0c983c304">
+		<saml:AuthnContext>
+			<saml:AuthnContextClassRef>urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport</saml:AuthnContextClassRef>
+		</saml:AuthnContext>
+	</saml:AuthnStatement>
+	<saml:AttributeStatement>
+		<saml:Attribute Name="uid">
+			<saml:AttributeValue xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">010160XXXXX</saml:AttributeValue>
+		</saml:Attribute>
+		<saml:Attribute Name="Culture">
+			<saml:AttributeValue xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">nb</saml:AttributeValue>
+		</saml:Attribute>
+		<saml:Attribute Name="postkasseleverandoerNavn">
+			<saml:AttributeValue xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">Digipost</saml:AttributeValue>
+		</saml:Attribute>
+		<saml:Attribute Name="epostadresse">
+			<saml:AttributeValue xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">ola@nordmann.no</saml:AttributeValue>
+		</saml:Attribute>
+		<saml:Attribute Name="mobiltelefonnummer">
+			<saml:AttributeValue xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">99999999</saml:AttributeValue>
+		</saml:Attribute>
+		<saml:Attribute Name="reservasjon">
+			<saml:AttributeValue xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">NEI</saml:AttributeValue>
+		</saml:Attribute>
+		<saml:Attribute Name="status">
+			<saml:AttributeValue xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">AKTIV</saml:AttributeValue>
+		</saml:Attribute>
+		<saml:Attribute Name="AuthMethod">
+			<saml:AttributeValue xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">Minid-OTC</saml:AttributeValue>
+		</saml:Attribute>
+		<saml:Attribute Name="SecurityLevel">
+			<saml:AttributeValue xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">4</saml:AttributeValue>
+		</saml:Attribute>
+	</saml:AttributeStatement>
+</saml:Assertion>

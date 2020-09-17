@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://utleverer.webservices.reseptformidleren.ergo.no/" xmlns:ns1="http://utleverer.webservices.reseptformidleren.ergo.no/types/" targetNamespace="http://utleverer.webservices.reseptformidleren.ergo.no/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://139.112.129.174:80/Utleverer/UtlevererWebServiceSoapHttpPort?xsd=1" namespace="http://utleverer.webservices.reseptformidleren.ergo.no/types/" />
+  <xs:element name="AppRecElement" nillable="true" type="tns:AppRec" />
+  <xs:element name="AppRecFault" type="tns:AppRecFault" />
+  <xs:element name="M10Element" nillable="true" type="tns:M10" />
+  <xs:element name="M25_2Element" nillable="true" type="tns:M25_2" />
+  <xs:element name="M25_3Element" nillable="true" type="tns:M25_3" />
+  <xs:element name="M27_1Element" nillable="true" type="tns:M27_1" />
+  <xs:element name="M27_2Element" nillable="true" type="tns:M27_2" />
+  <xs:element name="M3Element" nillable="true" type="tns:M3" />
+  <xs:element name="M9_11Element" nillable="true" type="tns:M9_11" />
+  <xs:element name="M9_12Element" nillable="true" type="tns:M9_12" />
+  <xs:element name="M9_1Element" nillable="true" type="tns:M9_1" />
+  <xs:element name="M9_21Element" nillable="true" type="tns:M9_21" />
+  <xs:element name="M9_22Element" nillable="true" type="tns:M9_22" />
+  <xs:element name="M9_2Element" nillable="true" type="tns:M9_2" />
+  <xs:element name="M9_3Element" nillable="true" type="tns:M9_3" />
+  <xs:element name="M9_4Element" nillable="true" type="tns:M9_4" />
+  <xs:element name="MVElement" nillable="true" type="tns:MV" />
+  <xs:complexType name="M25_2">
+    <xs:sequence>
+      <xs:element ref="ns1:dokument" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="AppRec">
+    <xs:sequence>
+      <xs:element ref="ns1:dokument" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="M3">
+    <xs:sequence>
+      <xs:element ref="ns1:dokument" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="M27_1">
+    <xs:sequence>
+      <xs:element ref="ns1:dokument" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="M27_2">
+    <xs:sequence>
+      <xs:element ref="ns1:dokument" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="AppRecFault">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="dokument" type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="M25_3">
+    <xs:sequence>
+      <xs:element ref="ns1:dokument" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="M9_3">
+    <xs:sequence>
+      <xs:element ref="ns1:dokument" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="M9_4">
+    <xs:sequence>
+      <xs:element ref="ns1:dokument" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="M10">
+    <xs:sequence>
+      <xs:element ref="ns1:dokument" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="M9_1">
+    <xs:sequence>
+      <xs:element ref="ns1:dokument" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="M9_2">
+    <xs:sequence>
+      <xs:element ref="ns1:dokument" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="MV">
+    <xs:sequence>
+      <xs:element ref="ns1:dokument" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="M9_21">
+    <xs:sequence>
+      <xs:element ref="ns1:dokument" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="M9_22">
+    <xs:sequence>
+      <xs:element ref="ns1:dokument" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="M9_11">
+    <xs:sequence>
+      <xs:element ref="ns1:dokument" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="M9_12">
+    <xs:sequence>
+      <xs:element ref="ns1:dokument" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

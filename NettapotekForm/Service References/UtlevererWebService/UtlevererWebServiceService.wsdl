@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://utleverer.webservices.reseptformidleren.ergo.no/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="UtlevererWebServiceService" targetNamespace="http://utleverer.webservices.reseptformidleren.ergo.no/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://139.112.129.174:80/Utleverer/UtlevererWebServiceSoapHttpPort?xsd=1" namespace="http://utleverer.webservices.reseptformidleren.ergo.no/types/" />
+    </xsd:schema>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://139.112.129.174:80/Utleverer/UtlevererWebServiceSoapHttpPort?xsd=2" namespace="http://utleverer.webservices.reseptformidleren.ergo.no/" />
+    </xsd:schema>
+  </types>
+  <message name="UtlevererWebService_m3">
+    <part name="parameters" element="tns:M3Element" />
+  </message>
+  <message name="UtlevererWebService_m3Response">
+    <part name="result" element="tns:AppRecElement" />
+  </message>
+  <message name="UtlevererWebService_verify">
+    <part name="parameters" element="tns:MVElement" />
+  </message>
+  <message name="UtlevererWebService_verifyResponse">
+    <part name="result" element="tns:AppRecElement" />
+  </message>
+  <message name="UtlevererWebService_m10">
+    <part name="parameters" element="tns:M10Element" />
+  </message>
+  <message name="UtlevererWebService_m10Response">
+    <part name="result" element="tns:AppRecElement" />
+  </message>
+  <message name="UtlevererWebService_m27_1">
+    <part name="parameters" element="tns:M27_1Element" />
+  </message>
+  <message name="UtlevererWebService_m27_1Response">
+    <part name="result" element="tns:M27_2Element" />
+  </message>
+  <message name="AppRecFault">
+    <part name="fault" element="tns:AppRecFault" />
+  </message>
+  <message name="UtlevererWebService_m9_11">
+    <part name="parameters" element="tns:M9_11Element" />
+  </message>
+  <message name="UtlevererWebService_m9_11Response">
+    <part name="result" element="tns:M9_12Element" />
+  </message>
+  <message name="UtlevererWebService_m25_2">
+    <part name="parameters" element="tns:M25_2Element" />
+  </message>
+  <message name="UtlevererWebService_m25_2Response">
+    <part name="result" element="tns:AppRecElement" />
+  </message>
+  <message name="UtlevererWebService_m25_3">
+    <part name="parameters" element="tns:M25_3Element" />
+  </message>
+  <message name="UtlevererWebService_m25_3Response">
+    <part name="result" element="tns:AppRecElement" />
+  </message>
+  <message name="UtlevererWebService_m9_3">
+    <part name="parameters" element="tns:M9_3Element" />
+  </message>
+  <message name="UtlevererWebService_m9_3Response">
+    <part name="result" element="tns:M9_4Element" />
+  </message>
+  <message name="UtlevererWebService_m9_21">
+    <part name="parameters" element="tns:M9_21Element" />
+  </message>
+  <message name="UtlevererWebService_m9_21Response">
+    <part name="result" element="tns:M9_22Element" />
+  </message>
+  <message name="UtlevererWebService_m9_1">
+    <part name="parameters" element="tns:M9_1Element" />
+  </message>
+  <message name="UtlevererWebService_m9_1Response">
+    <part name="result" element="tns:M9_2Element" />
+  </message>
+  <portType name="UtlevererWeb">
+    <operation name="UtlevererWebService_m3">
+      <input wsam:Action="M3" message="tns:UtlevererWebService_m3" />
+      <output wsam:Action="http://utleverer.webservices.reseptformidleren.ergo.no/UtlevererWeb/UtlevererWebService_m3Response" message="tns:UtlevererWebService_m3Response" />
+    </operation>
+    <operation name="UtlevererWebService_verify">
+      <input wsam:Action="Verify" message="tns:UtlevererWebService_verify" />
+      <output wsam:Action="http://utleverer.webservices.reseptformidleren.ergo.no/UtlevererWeb/UtlevererWebService_verifyResponse" message="tns:UtlevererWebService_verifyResponse" />
+    </operation>
+    <operation name="UtlevererWebService_m10">
+      <input wsam:Action="M10" message="tns:UtlevererWebService_m10" />
+      <output wsam:Action="http://utleverer.webservices.reseptformidleren.ergo.no/UtlevererWeb/UtlevererWebService_m10Response" message="tns:UtlevererWebService_m10Response" />
+    </operation>
+    <operation name="UtlevererWebService_m27_1">
+      <input wsam:Action="M27_1" message="tns:UtlevererWebService_m27_1" />
+      <output wsam:Action="http://utleverer.webservices.reseptformidleren.ergo.no/UtlevererWeb/UtlevererWebService_m27_1Response" message="tns:UtlevererWebService_m27_1Response" />
+      <fault wsam:Action="http://utleverer.webservices.reseptformidleren.ergo.no/UtlevererWeb/UtlevererWebService_m27_1/Fault/AppRecFault" name="AppRecFault" message="tns:AppRecFault" />
+    </operation>
+    <operation name="UtlevererWebService_m9_11">
+      <input wsam:Action="M9_11" message="tns:UtlevererWebService_m9_11" />
+      <output wsam:Action="http://utleverer.webservices.reseptformidleren.ergo.no/UtlevererWeb/UtlevererWebService_m9_11Response" message="tns:UtlevererWebService_m9_11Response" />
+      <fault wsam:Action="http://utleverer.webservices.reseptformidleren.ergo.no/UtlevererWeb/UtlevererWebService_m9_11/Fault/AppRecFault" name="AppRecFault" message="tns:AppRecFault" />
+    </operation>
+    <operation name="UtlevererWebService_m25_2">
+      <input wsam:Action="M25_2" message="tns:UtlevererWebService_m25_2" />
+      <output wsam:Action="http://utleverer.webservices.reseptformidleren.ergo.no/UtlevererWeb/UtlevererWebService_m25_2Response" message="tns:UtlevererWebService_m25_2Response" />
+    </operation>
+    <operation name="UtlevererWebService_m25_3">
+      <input wsam:Action="M25_3" message="tns:UtlevererWebService_m25_3" />
+      <output wsam:Action="http://utleverer.webservices.reseptformidleren.ergo.no/UtlevererWeb/UtlevererWebService_m25_3Response" message="tns:UtlevererWebService_m25_3Response" />
+    </operation>
+    <operation name="UtlevererWebService_m9_3">
+      <input wsam:Action="M9_3" message="tns:UtlevererWebService_m9_3" />
+      <output wsam:Action="http://utleverer.webservices.reseptformidleren.ergo.no/UtlevererWeb/UtlevererWebService_m9_3Response" message="tns:UtlevererWebService_m9_3Response" />
+    </operation>
+    <operation name="UtlevererWebService_m9_21">
+      <input wsam:Action="M9_21" message="tns:UtlevererWebService_m9_21" />
+      <output wsam:Action="http://utleverer.webservices.reseptformidleren.ergo.no/UtlevererWeb/UtlevererWebService_m9_21Response" message="tns:UtlevererWebService_m9_21Response" />
+      <fault wsam:Action="http://utleverer.webservices.reseptformidleren.ergo.no/UtlevererWeb/UtlevererWebService_m9_21/Fault/AppRecFault" name="AppRecFault" message="tns:AppRecFault" />
+    </operation>
+    <operation name="UtlevererWebService_m9_1">
+      <input wsam:Action="M9_1" message="tns:UtlevererWebService_m9_1" />
+      <output wsam:Action="http://utleverer.webservices.reseptformidleren.ergo.no/UtlevererWeb/UtlevererWebService_m9_1Response" message="tns:UtlevererWebService_m9_1Response" />
+    </operation>
+  </portType>
+  <binding name="UtlevererWebPortBinding" type="tns:UtlevererWeb">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="UtlevererWebService_m3">
+      <soap:operation soapAction="M3" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="UtlevererWebService_verify">
+      <soap:operation soapAction="Verify" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="UtlevererWebService_m10">
+      <soap:operation soapAction="M10" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="UtlevererWebService_m27_1">
+      <soap:operation soapAction="M27_1" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="AppRecFault">
+        <soap:fault use="literal" name="AppRecFault" namespace="" />
+      </fault>
+    </operation>
+    <operation name="UtlevererWebService_m9_11">
+      <soap:operation soapAction="M9_11" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="AppRecFault">
+        <soap:fault use="literal" name="AppRecFault" namespace="" />
+      </fault>
+    </operation>
+    <operation name="UtlevererWebService_m25_2">
+      <soap:operation soapAction="M25_2" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="UtlevererWebService_m25_3">
+      <soap:operation soapAction="M25_3" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="UtlevererWebService_m9_3">
+      <soap:operation soapAction="M9_3" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="UtlevererWebService_m9_21">
+      <soap:operation soapAction="M9_21" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="AppRecFault">
+        <soap:fault use="literal" name="AppRecFault" namespace="" />
+      </fault>
+    </operation>
+    <operation name="UtlevererWebService_m9_1">
+      <soap:operation soapAction="M9_1" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="UtlevererWebServiceService">
+    <port name="UtlevererWebPort" binding="tns:UtlevererWebPortBinding">
+      <soap:address location="http://139.112.129.174:80/Utleverer/UtlevererWebServiceSoapHttpPort" />
+    </port>
+  </service>
+</definitions>

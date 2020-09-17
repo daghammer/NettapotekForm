@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="851e32d7-fd9f-4308-b32b-2bd746da744f" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://139.112.129.5/NA/NAWebServiceSoapHttpPort?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="NAWebServiceSoapHttpPort.xsd" MetadataType="Schema" ID="7e4cf730-8163-4868-9756-da4eb5404bc5" SourceId="1" SourceUrl="http://139.112.129.5/NA/NAWebServiceSoapHttpPort?xsd=2" />
+    <MetadataFile FileName="NAWebServiceSoapHttpPort1.xsd" MetadataType="Schema" ID="7f836ea3-640c-4a31-8ad1-570adaa7cd80" SourceId="1" SourceUrl="http://139.112.129.5/NA/NAWebServiceSoapHttpPort?xsd=1" />
+    <MetadataFile FileName="NAWebServiceService.wsdl" MetadataType="Wsdl" ID="8a0de88b-cc68-4524-8337-9f7919e8b9c8" SourceId="1" SourceUrl="http://139.112.129.5/NA/NAWebServiceSoapHttpPort?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

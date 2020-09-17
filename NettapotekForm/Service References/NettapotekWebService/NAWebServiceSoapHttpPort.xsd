@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://na.webservices.reseptformidleren.ergo.no/" xmlns:ns1="http://na.webservices.reseptformidleren.ergo.no/types/" targetNamespace="http://na.webservices.reseptformidleren.ergo.no/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://139.112.129.5:80/NA/NAWebServiceSoapHttpPort?xsd=1" namespace="http://na.webservices.reseptformidleren.ergo.no/types/" />
+  <xs:element name="AppRecFault" type="tns:AppRecFault" />
+  <xs:element name="M9na1Element" nillable="true" type="tns:M9na1" />
+  <xs:element name="M9na2Element" nillable="true" type="tns:M9na2" />
+  <xs:element name="M9na3Element" nillable="true" type="tns:M9na3" />
+  <xs:element name="M9na4Element" nillable="true" type="tns:M9na4" />
+  <xs:complexType name="M9na3">
+    <xs:sequence>
+      <xs:element ref="ns1:dokument" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="M9na4">
+    <xs:sequence>
+      <xs:element ref="ns1:dokument" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="AppRecFault">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="dokument" type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="M9na1">
+    <xs:sequence>
+      <xs:element ref="ns1:dokument" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="M9na2">
+    <xs:sequence>
+      <xs:element ref="ns1:dokument" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
